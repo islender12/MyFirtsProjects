@@ -25,7 +25,4 @@ public class Calculadora {
 
     // Metodo Privado (solo usable dentro de esta clase)
 
-    private void metodoPrivado(){
-        System.out.println("Solo visible dentro de la clase Calculadora");
-    }
 }

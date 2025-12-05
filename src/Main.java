@@ -12,6 +12,7 @@ public class Main {
         float numf1;
         float numf2;
         float suma = 0;
+        float areaCircle = 0;
 
         String respM;
 
@@ -26,16 +27,17 @@ public class Main {
         Scanner intro = new Scanner(System.in);
 
         do {
-            System.out.println("======================================");
+            System.out.println("|====================================|");
             System.out.println("|     M E N U  D E  O P C I O N ES   | ");
-            System.out.println("======================================");
+            System.out.println("|====================================|");
             System.out.println("|      SELECCIONA UNA OPERACIÓN:     |");
             System.out.println("|          1.- Suma                  |");
             System.out.println("|          2.- Resta                 |");
             System.out.println("|          3.- Multiplicación        |");
             System.out.println("|          4.- División              |");
+            System.out.println("|          5.- Area Circulo5         |");
             System.out.println("|          0.- Salir                 |");
-            System.out.println("======================================");
+            System.out.println("|====================================|");
 
             System.out.print("Option: ");
             option = opt.nextInt();
@@ -118,7 +120,14 @@ public class Main {
                     System.out.flush();
 
                     break;
+                case 5:
+                    System.out.print("Size Circle: ");
+                    numd1 = numb1.nextFloat();
+                    areaCircle = (float) calc.calcularAreaCirculo((double) numd1);
+                    System.out.println("Resultant: " + areaCircle);
 
+                    intro.nextLine();
+                    System.out.flush();
                 case 0:
                     break;
                 default:
