@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Calculadora {
 
     // Metodo Instancia (necesita objeto)
@@ -11,7 +9,7 @@ public class Calculadora {
         return a - b;
     }
 
-    public int mult(int a, int b){
+    public int multiplicacion(int a, int b){
         return a * b;
     }
 
